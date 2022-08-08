@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Akhir Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Bookshelf Apps</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Tambah Buku Baru</h2>
+      <hr />
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul Buku</label>
+          <input id="inputBookTitle" type="text" placeholder="Masukkan judul buku..." required />
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" placeholder="Masukkan nama penulis..." required />
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun Terbit</label>
+          <input id="inputBookYear" type="number" placeholder="Masukkan tahun terbit..." required />
+        </div>
+        <div class="input_inline">
+          <label for="inputBookIsComplete">Selesai Dibaca</label>
+          <input id="inputBookIsComplete" type="checkbox" />
+        </div>
+        <button id="bookSubmit" type="submit">Tambah</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Cari Buku</h2>
+      <hr />
+      <form id="searchBook">
+        <div class="input">
+          <label for="searchBookTitle">Judul Buku</label>
+          <input id="searchBookTitle" type="text" placeholder="Masukkan judul buku..." />
+        </div>
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>Belum Selesai Dibaca</h2>
+      <hr />
+      <div class="container-bookshelf" id="incompleteBookshelfList"></div>
+    </div>
+
+    <div class="container">
+      <h2>Selesai Dibaca</h2>
+      <hr />
+      <div class="container-bookshelf" id="completeBookshelfList"></div>
+    </div>
+
+    <div class="container-modal">
+      <div class="modal">
+        <h2>Berhasil Menghapus Buku</h2>
+        <svg class="close-modal" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
